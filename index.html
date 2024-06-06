@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram-like Post</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: "Arial", sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .post {
+            width: 450px;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1%;
+        }
+
+        .post-header {
+            padding: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .post-footer {
+            padding: 12px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .username {
+            font-weight: bold;
+            color: #262626;
+        }
+
+        .location {
+            font-size: 12px;
+            color: #8e8e8e;
+        }
+
+        .post-image {
+            width: 100%;
+            display: block;
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            margin: 2%;
+        }
+
+        .like,
+        .comment,
+        .share {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 3%;
+        }
+
+        .action-icon {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .likes {
+            font-weight: bold;
+            color: #262626;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .caption {
+            color: #262626;
+        }
+
+        .caption .username {
+            font-weight: bold;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="post">
+        <div class="post-header">
+            <img src="krishnaDp.jpeg" alt="User Profile" class="profile-pic" />
+            <div class="user-info">
+                <span class="username">krishnahealing</span>
+                <span class="location">Vrindavan</span>
+            </div>
+        </div>
+        <img src="krishnapost1.jpeg" alt="Post Image" class="post-image" />
+        <div class="post-footer">
+            <div class="actions">
+                <div class="like">
+                    <img src="heart (1).png" alt="Like" class="action-icon like-btn" />
+                    <p style="font-size: 13px; color: rgb(48, 48, 48)">Likes</p>
+                    <p class="like-number" style="font-size: 20px; color: rgb(0, 0, 0)">0</p>
+                </div>
+                <div class="comment">
+                    <img src="message.png" alt="Comment" class="action-icon comment-btn" />
+                    <p style="font-size: 13px; color: rgb(48, 48, 48)">Comments</p>
+                    <p class="comment-number" style="font-size: 20px; color: rgb(0, 0, 0)">0</p>
+                </div>
+                <div class="share">
+                    <img src="send.png" alt="Share" class="action-icon share-btn" />
+                    <p style="font-size: 13px; color: rgb(48, 48, 48)">Shares</p>
+                    <p class="share-number" style="font-size: 20px; color: rgb(0, 0, 0)">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="post">
+        <div class="post-header">
+            <img src="krishnaDp.jpeg" alt="User Profile" class="profile-pic" />
+            <div class="user-info">
+                <span class="username">krishnahealing</span>
+                <span class="location">Vrindavan</span>
+            </div>
+        </div>
+        <img src="krishna radha post 2.jpg" alt="Post Image" class="post-image" />
+        <div class="post-footer">
+            <div class="actions">
+                <div class="like">
+                    <img src="heart (1).png" alt="Like" class="action-icon like-btn" />
+                    <p style="font-size: 13px; color: rgb(48, 48, 48)">Likes</p>
+                    <p class="like-number" style="font-size: 20px; color: rgb(0, 0, 0)">0</p>
+                </div>
+                <div class="comment">
+                    <img src="message.png" alt="Comment" class="action-icon comment-btn" />
+                    <p style="font-size: 13px; color: rgb(48, 48, 48)">Comments</p>
+                    <p class="comment-number" style="font-size: 20px; color: rgb(0, 0, 0)">0</p>
+                </div>
+                <div class="share">
+                    <img src="send.png" alt="Share" class="action-icon share-btn" />
+                    <p style="font-size: 13px; color: rgb(48, 48, 48)">Shares</p>
+                    <p class="share-number" style="font-size: 20px; color: rgb(0, 0, 0)">0</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="post">
+        <div class="post-header">
+            <img src="krishnaDp.jpeg" alt="User Profile" class="profile-pic" />
+            <div class="user-info">
+                <span class="username">krishnahealing</span>
+                <span class="location">Vrindavan</span>
+            </div>
+        </div>
+        <img src="radha Krishna post 3.jpg" alt="Post Image" class="post-image" />
+        <div class="post-footer">
+            <div class="actions">
+                <div class="like">
+                    <img src="heart (1).png" alt="Like" class="action-icon like-btn" />
+                    <p style="font-size: 13px; color: rgb(48, 48, 48)">Likes</p>
+                    <p class="like-number" style="font-size: 20px; color: rgb(0, 0, 0)">0</p>
+                </div>
+                <div class="comment">
+                    <img src="message.png" alt="Comment" class="action-icon comment-btn" />
+                    <p style="font-size: 13px; color: rgb(48, 48, 48)">Comments</p>
+                    <p class="comment-number" style="font-size: 20px; color: rgb(0, 0, 0)">0</p>
+                </div>
+                <div class="share">
+                    <img src="send.png" alt="Share" class="action-icon share-btn" />
+                    <p style="font-size: 13px; color: rgb(48, 48, 48)">Shares</p>
+                    <p class="share-number" style="font-size: 20px; color: rgb(0, 0, 0)">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      
+        let likeCount = localStorage.getItem("likeCount") || 0;
+        let commentCount = localStorage.getItem("commentCount") || 0;
+        let shareCount = sessionStorage.getItem("shareCount") || 0;
+
+        const updateCounts = () => {
+            document.querySelectorAll(".like-number").forEach(el => el.textContent = likeCount);
+            document.querySelectorAll(".comment-number").forEach(el => el.textContent = commentCount);
+            document.querySelectorAll(".share-number").forEach(el => el.textContent = shareCount);
+        };
+
+        const counter = (type) => {
+            if (type === 'like') {
+                likeCount++;
+                localStorage.setItem("likeCount", likeCount);
+            } else if (type === 'comment') {
+                commentCount++;
+                localStorage.setItem("commentCount", commentCount);
+            } else if (type === 'share') {
+                shareCount++;
+                sessionStorage.setItem("shareCount", shareCount);
+            }
+            updateCounts();
+        };
+
+        document.querySelectorAll(".like-btn").forEach(btn => {
+            btn.addEventListener("click", () => counter('like'));
+        });
+
+        document.querySelectorAll(".comment-btn").forEach(btn => {
+            btn.addEventListener("click", () => counter('comment'));
+        });
+
+        document.querySelectorAll(".share-btn").forEach(btn => {
+            btn.addEventListener("click", () => counter('share'));
+        });
+
+        
+        updateCounts();
+    </script>
+
+</body>
+
+</html>
